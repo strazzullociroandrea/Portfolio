@@ -5,13 +5,13 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/30 relative">
-      <div className="container mx-auto px-40 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
+    <section id="contact" className="py-16 bg-muted/30 relative">
+      <div className="container mx-auto px-6 sm:px-10 lg:px-24 relative z-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
           Contatti
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center bg-card border border-border rounded-2xl shadow-xl p-8 px-10 md:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-card border border-border rounded-2xl shadow-xl p-6 sm:p-10 lg:p-14">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
@@ -19,10 +19,10 @@ const Contact = () => {
                 <Mail size={20} className="text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Email</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Email</p>
                 <a
                   href="mailto:ciroandreastrazzullo06@gmail.com"
-                  className="font-medium text-foreground hover:underline"
+                  className="text-base sm:text-lg md:text-xl font-medium text-foreground hover:underline break-all"
                 >
                   ciroandreastrazzullo06@gmail.com
                 </a>
@@ -34,10 +34,10 @@ const Contact = () => {
                 <Phone size={20} className="text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Telefono</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Telefono</p>
                 <a
                   href="tel:+393890979120"
-                  className="font-medium text-foreground hover:underline"
+                  className="text-base sm:text-lg md:text-xl font-medium text-foreground hover:underline"
                 >
                   +39 389 097 9120
                 </a>
@@ -49,13 +49,15 @@ const Contact = () => {
                 <MapPin size={20} className="text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Località</p>
-                <p className="font-medium text-foreground">Milano e Monza Brianza, Italia</p>
+                <p className="text-sm sm:text-base text-muted-foreground">Località</p>
+                <p className="text-base sm:text-lg md:text-xl font-medium text-foreground">
+                  Milano e Monza Brianza, Italia
+                </p>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-6 pt-2">
+            <div className="flex items-center gap-6 pt-2 flex-wrap">
               <a
                 href="https://github.com/strazzullociroandrea"
                 target="_blank"
@@ -92,7 +94,7 @@ const Contact = () => {
               autoplay
               loop
               src="https://lottie.host/91ad51c7-0cc6-463d-9c19-e78bf54949fd/EMwFBXgc1n.json"
-              style={{ height: 260, width: 260 }}
+              className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72"
             />
           </div>
         </div>
